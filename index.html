@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Issue Tracker</title>
+</head>
+
+<body>
+    <main class="container-fluid" id="main-wrapper">
+
+        <section class="main-form">
+            <div class="container">
+                <h2>Issue Tracker <small>Version 1.0.0</small></h2>
+                <div class="jumbotron">
+                    <h3>Create a New Issue:</h3>
+                    <br>
+                    <form action="issueInputForm">
+                        <div class="form-group">
+                            <label for="issueDescInput"><strong>Description</strong></label>
+                            <input type="text" name="issueDescInput" id="issueDescInput" class="form-control" placeholder="Provide an overview of the problem">
+                            <small id="helpId" class="text-muted">Help text</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="issueSeverityInput"><strong>Severity</strong></label>
+                            <select class="form-control" name="severitySelection" id="issueSeverityInput">
+                        <option value="Low">Low</option>
+                        <option value="Medium">Medium</option>
+                        <option value="High">High</option>
+                    </select>
+                            <small id="helpId" class="text-muted">Help text</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="issueAssignedToInput"><strong>Assigned To</strong></label>
+                            <input type="text" name="issueAssignedToInput" id="issueAssignedToInput" class="form-control" placeholder="Please enter name of person or department responsible to address issue" aria-describedby="helpId">
+                            <small id="helpId" class="text-muted">Help text</small>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Add Issue</button>
+                    </form>
+                </div>
+                <div class="col-lg-12">
+                    <div class="issuesList">
+
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="container">
+                    <p>Additional Notes on completing the above form</p>
+                </div>
+
+            </footer>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+
+
+
+    <script src="https://chancejs.com/chance.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
